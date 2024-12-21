@@ -1108,6 +1108,18 @@ audio {
 #b5,#b55{
 	background-image: url('b5.png');
 }
+#b2,#b22 {
+	background-image: url('b2.png');
+}
+#b3,#b33 {
+	background-image: url('b3.png');
+}
+#b4,#b44{
+	background-image: url('b4.png');
+}
+#b5,#b55{
+	background-image: url('b5.png');
+}
 #b6,#b66{
 	background-image: url('b6.png');
 }
@@ -1303,10 +1315,49 @@ audio {
     }
 
 
-
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
+    /* @media only screen and (max-width: 720px){
     	.container {
     		-webkit-transform: scale(0.9);
     	}
-    }*/
+    } */
+    @media only screen and (max-width: 540px){
+		.bannar {
+			margin-top: 2rem;
+		}
+		.bulb-holder {
+			width: 50px;
+			margin-left: 0.5rem;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.cont-balloons{
+			margin-right: 5rem;
+			margin-left: 5rem;
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
+
+		.balloons {
+			margin: 0;
+			padding: 0;
+			position: fixed;
+			bottom: -200px;
+			opacity: 0.6;
+			z-index: 70;
+			width: 50px;
+			height: 83px;
+			background-repeat: no-repeat no-repeat;
+			background-size: 50px 83px;
+		}
+		.balloons h2 {
+			margin-bottom: 10px;
+			padding: 0;
+			text-transform: uppercase;
+			font-family: 'Signika', sans-serif;
+			font-size: 2rem;
+			color: #BF4136;
+			text-shadow: 5px 5px 5px #FFF;
+			display: none;
+		}
+    }
